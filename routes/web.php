@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
     Route::redirect('/', '/dashboard', 301);
 
     Route::get('/login', [LoginController::class, "showLoginForm"])->name('login');
-    Route::post('/login', [LoginController::class,"login"])->name('login');
+    Route::post('/login', [LoginController::class,"login"]);
     Route::post('/logout', [LoginController::class, "logout"])->name('logout');
 
 // Route::middleware(['auth'])->group(function () {
@@ -20,4 +20,9 @@ use Illuminate\Support\Facades\Route;
 
     Route::resource('item-category', ItemCategoryController::class);
     Route::resource('item', ItemController::class);
+
+
+    Route::get('/soal-2-process', [DashboardController::class, 'soal2View'])->name('soal2-process');
+    Route::post('/soal-2-process', [DashboardController::class, 'soal2Process']);
+
 // });

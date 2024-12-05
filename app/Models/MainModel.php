@@ -32,7 +32,8 @@ class MainModel extends Model {
      */
     public function validateStock($stock, $quantity) {
         if ($stock < $quantity) {
-            throw new \Exception("Stok tidak cukup");
+            return false;
+            // throw new \Exception("Stok tidak cukup");
         }
 
         return true;

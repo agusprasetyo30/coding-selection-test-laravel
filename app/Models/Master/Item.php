@@ -15,15 +15,22 @@ class Item extends MainModel
         return $this->belongsTo(ItemCategory::class);
     }
 
+    
     /**
      * Digunakan untuk mengurangi stock barang
      * 
      * @param int $quantity
-     * @return void
+     * @return bool
      */
     public function reduceStock(int $quantity) {
-        $this->validateStock($this->stock, $quantity); // Cek persediaan stock
-        $this->stock -= $quantity;
-        $this->save();
+        // Cek persediaan stock
+        if ($this->validateStock($this->stock, $quantity)) {
+            $this->stock -= $quantity;
+            $this->save();
+
+            return true;
+        }
+
+        return false;
     }
 }

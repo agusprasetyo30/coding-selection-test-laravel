@@ -14,6 +14,11 @@ class ItemController extends Controller
      */
     public function index()
     {
+        // $cek_reduce = Item::first()->reduceStock(3);
+        // $cek = (new Item)->calculateTotal(3, 40);
+        // $cek2 = (new Item)->validateStock(10, 3);
+
+        // dd(Item::all(),$cek_reduce, $cek, $cek2);
         return view("master.item.index");
     }
 

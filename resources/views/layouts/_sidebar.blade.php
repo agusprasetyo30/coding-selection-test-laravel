@@ -15,6 +15,8 @@
 			<li class="#"><a class="nav-link" href="{{ route('item.index') }}"><i class="fas fa-tachometer-alt"></i> <span>Barang</span></a></li>
 
 			<li class="menu-header">Transaction</li>
+			
+			<li class="menu-header">Soal 2</li>
 
 			{{-- @can('index-user')
 				<li class="nav-item {{ Request::is('employee*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('employee.index') }}"><i class="fas fa-users"></i> <span>Employee List</span></a></li>
