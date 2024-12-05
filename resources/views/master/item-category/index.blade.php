@@ -14,7 +14,7 @@
 		<div class="section-body">
 			<div class="card card-primary">
 				<div class="card-header">
-					<h4>Item Category List</h4>
+					{{-- <h4>Item Category List</h4> --}}
 					<div class="card-header-action">
 						{{-- @can('create-user') --}}
 							<a href="{{ route('item-category.create') }}" class="btn btn-primary">

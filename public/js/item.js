@@ -26,6 +26,7 @@ function generateDatatables()
 			{ data: 'item_category.name', name: 'itemCategory.name' , orderable: false, searchable: true},
 			{ data: 'price_formatted', name: 'price' , orderable: false, searchable: true},
 			{ data: 'stock', name: 'stock' , orderable: false, searchable: true},
+			{ data: 'is_discount_formatted', name: 'is_discount' , orderable: false, searchable: true},
 			{ data: 'actions', name: 'actions'},
 		],
 		language: {

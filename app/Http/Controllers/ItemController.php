@@ -47,6 +47,8 @@ class ItemController extends Controller
                 ->withInput();
         }
 
+        $request->merge(['is_discount'=> $request->discount == "on" ? 1 : 0]);
+
         Item::create($request->all());
 
         return redirect()->route('item.index')

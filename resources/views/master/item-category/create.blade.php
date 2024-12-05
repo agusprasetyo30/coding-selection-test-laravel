@@ -5,16 +5,11 @@
 @section('content')
 <section class="section">
 	<div class="section-header">
-		<h1>Item Category</h1>
+		<h1>Add Item Category</h1>
 	</div>
 
 	<div class="section-body">
 		<div class="card">
-			<div class="card-header">
-				<h4>Create Item Category</h4>
-				<div class="card-header-action">
-				</div>
-			</div>
 			<div class="card-body">
 				<form action="{{ route('item-category.store') }}" method="post">
 					@csrf

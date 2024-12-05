@@ -14,16 +14,11 @@
 @section('content')
 <section class="section">
 	<div class="section-header">
-		<h1>Item Data</h1>
+		<h1>Add Item Data</h1>
 	</div>
 
 	<div class="section-body">
 		<div class="card">
-			<div class="card-header">
-				<h4>Create Item</h4>
-				<div class="card-header-action">
-				</div>
-			</div>
 			<div class="card-body">
 				<form action="{{ route('item.store') }}" method="post">
 					@csrf
@@ -75,6 +70,13 @@
 								{{ $message }}
 							</div>
 						@enderror
+					</div>
+
+					<div class="form-group">
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="discount" name="discount">
+							<label class="custom-control-label" for="discount">Set Discount</label>
+						</div>
 					</div>
 
 					<a href="{{ route('item.index') }}" class="btn btn-warning" type="reset">

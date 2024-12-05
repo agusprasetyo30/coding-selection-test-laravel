@@ -22,12 +22,12 @@
                                     @csrf
                                     <div class="form-group">
                                         <label>Input 1 <span class="text-danger">*</span></label>
-                                        <input name="input1" type="text" class="form-control">
+                                        <input name="input1" type="text" class="form-control" required>
                                     </div>
             
                                     <div class="form-group">
                                         <label>Input 2 <span class="text-danger">*</span></label>
-                                        <input name="input2" type="text" class="form-control">
+                                        <input name="input2" type="text" class="form-control" required>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary w-100">Process</button>

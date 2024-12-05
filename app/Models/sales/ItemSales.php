@@ -2,8 +2,8 @@
 
 namespace App\Models\Sales;
 
-use App\Master\Models\Item;
 use App\Models\MainModel;
+use App\Models\Master\Item;
 use Illuminate\Database\Eloquent\Model;
 
 class ItemSales extends MainModel
@@ -12,7 +12,7 @@ class ItemSales extends MainModel
         'item_id', 'quantity', 'total', 'discount'
     ];
 
-    public function items() {
+    public function item() {
         return $this->belongsTo(Item::class);
     }
 }

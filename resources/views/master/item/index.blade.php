@@ -14,7 +14,7 @@
 		<div class="section-body">
 			<div class="card card-primary">
 				<div class="card-header">
-					<h4>Item List</h4>
+					{{-- <h4>Item List</h4> --}}
 					<div class="card-header-action">
 						{{-- @can('create-user') --}}
 							<a href="{{ route('item.create') }}" class="btn btn-primary">
@@ -29,9 +29,10 @@
 						<thead>
 							<tr>
 								<th width="25%">Name</th>
-								<th width="30%">Category</th>
+								<th width="25%">Category</th>
 								<th width="15%">Price</th>
-								<th width="20%">Stock</th>
+								<th width="15%">Stock</th>
+								<th width="10%">Discount</th>
 								<th width="10%"></th>
 							</tr>
 						</thead>
