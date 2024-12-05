@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Master\Item;
+use App\Models\Master\ItemCategory;
+use App\Models\Sales\ItemSales;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 class DashboardController extends Controller
@@ -10,8 +13,14 @@ class DashboardController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        return view('dashboard.home');
+    {   
+
+        // dd(ItemSales::all(), ItemSales::sum('total'));
+        return view('dashboard.home', [
+            'item_count' => Item::all()->count(),
+            'sales_count' => ItemSales::all()->count(),
+            'total_revenue' => "Rp. " . number_format(ItemSales::sum('total'), 0),
+        ]);
     }
 
     /**

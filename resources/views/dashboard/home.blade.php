@@ -17,10 +17,10 @@
 						</div>
 						<div class="card-wrap">
 							<div class="card-header">
-							<h4>Total Employee</h4>
+							<h4>Total Item</h4>
 							</div>
 							<div class="card-body">
-							{{-- {{ $total_admin }} --}}
+							{{ $item_count }}
 							</div>
 						</div>
 					</div>
@@ -32,10 +32,10 @@
 						</div>
 						<div class="card-wrap">
 							<div class="card-header">
-								<h4>Reimburse Total</h4>
+								<h4>Sales Total</h4>
 							</div>
 							<div class="card-body">
-								{{-- {{ $total_reimburse }} --}}
+								{{ $sales_count }}
 							</div>
 						</div>
 					</div>
@@ -47,10 +47,10 @@
 					</div>
 					<div class="card-wrap">
 						<div class="card-header">
-						<h4>Pembayaran Disetujui / Dibayar</h4>
+						<h4>Total Revenue</h4>
 						</div>
 						<div class="card-body">
-						{{-- {{ $pembayaran_approve }} --}}
+						{{ $total_revenue }}
 						</div>
 					</div>
 					</div>
