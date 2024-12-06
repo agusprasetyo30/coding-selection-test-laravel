@@ -21,6 +21,11 @@
 6. Untuk menambahkan data dummy, maka tambahkan seeder, dengan cara ketik di terminal `php artisan db:seed`
 7. Aplikasi dapat digunakan 😊
 
+## Authentifikasi
+
+Username : test@gmail.com <br>
+Password : test
+
 ## Screenshot
 
 <img src="./1. Dashboard.png">
