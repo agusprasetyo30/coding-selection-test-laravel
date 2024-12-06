@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
     Route::post('/login', [LoginController::class,"login"]);
     Route::post('/logout', [LoginController::class, "logout"])->name('logout');
 
-// Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->group(function () {
     require('datatables.php');
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -36,4 +36,4 @@ use Illuminate\Support\Facades\Route;
     Route::get('/soal-2-process', [DashboardController::class, 'soal2View'])->name('soal2-process');
     Route::post('/soal-2-process', [DashboardController::class, 'soal2Process']);
 
-// });
+});
